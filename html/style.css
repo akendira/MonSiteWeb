@@ -1,0 +1,431 @@
+@charset "UTF-8";
+/* CSS Document */
+/*Atman KENDIRA*/
+/*Reset*/
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,p,blockquote,th,td{
+	margin: 0;
+	padding: 0;
+}
+table{ border-collapse:collapse; border-spacing:0;}
+fieldset,img{ border:0;}
+address,caption,cite,code,dfn,var{ font-style:normal; font-weight:normal;}
+ol,ul{list-style:none;}
+q:before,d:after{ content:'';}
+abbr,acronym{ border:0;}
+
+h1{ color:#8A975B;line-height: 71px;float: left;}
+h2{ font-family:"Myriad Pro"; font-size:14px; line-height:20px;color:#3a4247; text-decoration:none;}
+h3{	font-family: "Myriad Pro"; font-size: 12px; line-height: 20px; color: #999999; font-weight: lighter;}
+h4{ font-family: "Times New Roman", Times, serif; font-size: 12px; line-height: 20px;color:#f44f35;}
+h5{	font-family: "Myriad Pro", Times, serif; font-size: 12px; line-height: 20px; color: #f44f35; font-weight:600;}
+h6{ font-family:"Myriad Pro"; font-size:20px; line-height:20px;color:#3a4247; text-decoration:none;}
+h7{	font-family: "Myriad Pro"; font-size: 12px; color: #FFF; font-weight: lighter;}
+h8{ font-family:"Times New Roman", Times, serif; font-size:14px; color:#FFF; text-decoration:none; line-height:22px; text-align:center;}
+h9{ font-family: "lobster_1.4regular"; font-size:18px; letter-spacing:1px ; color:#FFF; text-decoration:none; line-height:22px; text-align:center;}
+body{ background:url(img/bkg_body.png) repeat;}
+a{ color:#3A4247; cursor:pointer; text-decoration:none;}
+a:hover{text-decoration:none;}
+button,input,select,textarea{ font-family:Arial, Verdana, sans-serif; font-size:12px;}
+textarea{ resize:none;}
+
+/**Font**/
+@font-face {
+    font-family: 'lobster_1.4regular';
+    src: url('font/lobster_1.4-webfont.eot');
+    src: url('font/lobster_1.4-webfont.eot?#iefix') format('embedded-opentype'),
+         url('font/lobster_1.4-webfont.woff') format('woff'),
+         url('font/lobster_1.4-webfont.ttf') format('truetype'),
+         url('font/lobster_1.4-webfont.svg#lobster_1.4regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+/**Wrap**/
+.wrap{
+	width:1020px;
+	margin:0 auto;
+}
+
+/**Header**/
+.header{
+	background: url(img/bkg_header.png);
+	height: 60px;
+	margin-top: 15px;
+}
+.logo{
+	background: url(img/bkg_logo2.png);
+	display: block;
+	width: 86px;
+	height: 122px;
+	text-indent: -5000px;
+	float: left;
+	margin-left:53px;
+	margin-top: -11px;
+	background-repeat: no-repeat;
+}
+
+/*
+.menu{
+	width: 443px;
+	height:60px;
+	margin-left: 322px;
+}
+.menu ul li{
+	float: left;	height:52px;
+	width:62px;
+	text-align:center;
+	list-style-type: none;	background:url(img/Menu_fond2.png) left top no-repeat;
+}
+.menu ul li a {
+	/*font-family: "Myriad Pro";*/
+	/*
+	font-family: 'lobster_1.4regular';
+	font-size: 14px;
+	color: #FFF;
+	font-weight: normal;
+	line-height: 52px;
+	text-decoration: none;
+
+}*/
+
+.menu{
+	width: 443px;
+	height:60px;
+	margin-left: 322px;
+}
+.menu ul li{
+	float: left;
+	padding-right: 36px;
+	list-style-type: none;
+}
+.menu ul li a {
+	/*font-family: "Myriad Pro";*/
+	font-family: 'lobster_1.4regular';
+	font-size: 14px;
+	color: #FFF;
+	font-weight: normal;
+	line-height: 52px;
+	text-decoration: none;	
+}
+
+/**BlogTitle**/
+.blog-title{
+	font-family: "lobster_1.4regular";
+	font-size: 32px;
+	color: #3a4247;
+	line-height: 20px;
+	padding-top: 44px;
+	text-align: center;
+	margin-left: 160px;
+	margin-right: 160px;
+	padding-left: 39px;
+	padding-right: 39px;
+	font-weight: normal;
+	text-decoration: none;
+}
+.blog-content{
+	font-family: "Myriad Pro";
+	font-size: 12px;
+	color: #999999;
+	line-height: 20px;
+	padding-top: 44px;
+	text-align: center;
+	margin-left: 160px;
+	margin-right: 160px;
+	padding-left: 39px;
+	padding-right: 39px;
+	font-weight: normal;
+}
+.more{
+	background: url(img/bkg_slider.png) no-repeat;
+	width: 108px;
+	height: 44px;
+	display: block; 
+	margin: 0 auto;
+	margin-top:-34px;
+}
+.vignette{
+	background: url(img/bkg_vignette.png) no-repeat;
+	width: 700px;
+	height: 299px;
+	padding-top: 41px;
+	margin-left: 160px;
+	margin-right: 160px;
+	background-origin: content-box;
+}
+.preview{
+}
+	
+/**Contener**/
+.content{
+	height:258px;
+	width:700px;
+	margin:0 auto;}
+.separator{
+	font-family:"Myriad Pro";
+	font-size:60px;
+	color:#3a4247;
+	opacity:0.2;
+	letter-spacing:14px;
+	margin-top:-36px;
+}
+.block-left-title{
+	padding:5px 5px 35px 5px;
+	text-align:right;
+}	
+.block-left{
+	float:left;
+	width:232px;
+	height:150px;
+	padding-right:5px;
+	text-align:justify;
+	text-align-last:right;
+}
+.icon-left{
+	background:url(img/bkg_icone1.png) no-repeat;
+	display:block;
+	width:39px;
+	height:47px;
+	float:left;
+}
+.block-center-title{
+	padding:5px 5px 35px 5px;
+	text-align:right;
+}
+.block-center{
+	float:left;
+	width:230px;
+	height:150px;
+	padding-right:5px;
+	padding-left:5px;
+	text-align:center;
+	text-align-last:center;
+}
+.icon-center{
+	background:url(img/bkg_icone2.png) no-repeat;
+	display:block;
+	width:25px;
+	height:49px;
+	float:left;
+}	
+.block-right{
+	float:left;
+	width:218px;
+	height:150px;
+	margin-left: 5px;
+	text-align:justify;
+	text-align-last:right;
+}
+.block-right-title{
+	padding:5px 5px 35px 5px;
+	text-align:right;
+}
+.icon-right{
+	background:url(img/bkg_icone3.png) no-repeat;
+	display:block;
+	width:39px;
+	height:40px;
+	float:left;
+}		
+
+/**News**/
+.news{
+	margin:0 auto;
+	width:700px;
+	height:235px;
+}
+.news2{
+	margin:0 auto;
+	width:700px;
+	height:150px;
+}
+.news-icon{
+	float:left;
+	width:50px;
+
+}
+.news2-icon{
+	float:left;
+	width:50px;
+	
+}
+.news-date{
+	background: url(img/bkg_date.png) no-repeat;
+	text-align: center;
+	line-height: 18px;
+	width: 50px;
+	height: 45px;
+	padding-top:5px;
+	padding-bottom: 20px;
+	font-family: "Myriad Pro";
+	font-size: 12px;
+	color: #FFF;
+}
+.news2-date{
+	background: url(img/bkg_date.png) no-repeat;
+	text-align: center;
+	line-height: 18px;
+	width: 50px;
+	height: 45px;
+	padding-top:5px;
+	padding-bottom: 20px;
+	font-family: "Myriad Pro";
+	font-size: 12px;
+	color: #FFF;
+}
+.nbrcom{
+	background:url(img/bkg_post.png) no-repeat;
+	margin: 0 auto;
+	width:30px;
+	height:33px;
+	font-family:"Myriad Pro";
+	font-size:12px;
+	color:#FFF;
+	text-align:center;
+	line-height:20px;
+}
+.nbrcom2{
+	background:url(img/bkg_post.png) no-repeat;
+	margin: 0 auto;
+	width:30px;
+	height:33px;
+	font-family:"Myriad Pro";
+	font-size:12px;
+	color:#FFF;
+	text-align:center;
+	line-height:20px;}
+.news-post{
+	float:left;
+	width:350px;
+	margin-left:10px;
+	margin-right:10px;
+	padding-right:60px;
+	text-align:justify;
+}
+.news2-post{
+	float:left;
+	width:350px;
+	margin-left:10px;
+	margin-right:10px;
+	padding-right:60px;
+	text-align:justify;
+}
+.news-post-title{
+	padding-bottom:10px;
+}
+.news2-post-title{
+	padding-bottom:10px;
+}
+.news-post-content{
+	padding-bottom:10px;
+	padding-top:10px;
+}
+.news2-post-content{
+	padding-bottom:10px;
+	padding-top:10px;
+}
+.news-img{
+	float:left;
+	width:220px;
+	height:123px;
+}
+.news2-img{
+	float:left;
+	width:220px;
+	height:123px;
+}
+/**footer**/
+.foot{
+	background:url(img/bkg_foot.png) repeat;
+	height:247px;
+	margin-bottom:25px;
+}
+.foot-content{
+	width:700px;
+	height:247px;
+	margin:0 auto;
+}
+.foot-text-widjet{
+	margin-top:40px;
+	float:left;
+	width:240px;
+	height:207px;
+	text-align:left
+}
+.foot-twitter{
+	padding-top:40px;
+	font-family:"Times New Roman Italic"; font-size: 14px; line-height: 20px; color: #999999; font-weight: lighter;
+	float:left;
+	
+	width:237px;
+	height:207px;
+}
+.foot-follow-me{
+	padding-top:40px;
+	float:left;
+	width:219px;
+	height:207px;
+}
+.foot-follaw-me-top{
+	width:219px;
+	height:34px;
+}
+.foot-follaw-me-bottom{
+	padding-top:10px;
+	margin:0 auto;
+	width:219px;
+	height:34px;
+}
+.twitter{
+	float:left;
+	width:73px;
+	height:34px;
+	text-align:right;
+}
+.facebook{
+	float:left;
+	width:73px;
+	height:34px;
+	text-align:center;
+}
+.google{
+	float:left;
+	width:73px;
+	height:34px;
+	text-align:left;
+}
+.youtube{
+	float:left;
+	width:73px;
+	height:34px;
+	text-align:right;
+}
+.linkedin{
+	float:left;
+	width:73px;
+	height:34px;
+	text-align:center;
+}
+.rss{
+	float:left;
+	width:73px;
+	height:34px;
+	text-align:left;
+}
+.foot-separate{
+	background:url(img/bkg_foot_separate.png) no-repeat;
+	float:left;
+	width:2px;
+	height:247px;
+}
+.copyright{
+	width:700px;
+	height:10px;
+	margin:0 auto;
+	text-align:center;
+	font-family:"Myriad Pro";
+	font-size:11px;
+	color:#999999;
+	line-height:20px;
+}
